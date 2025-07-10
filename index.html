@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADA - Soluções que se Adaptam</title>
+  <link rel="icon" href="img/icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<div class="borda-container">
+
+    <div class="principal">
+
+        <div class="container" style="z-index: 5; opacity: 1;">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" alt="Logo" style="height: 30px; margin-right: 10px;"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="z-index: 8; border: 1px solid #fff;">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="z-index: 5;">
+                    <li class="nav-item">
+                        <a class="nav-link active custom-active" href="#">
+                        <span class="dot"></span> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Soluções</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Serviços</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Serviço 1</a></li>
+                        <li><a class="dropdown-item" href="#">Serviço 2</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-contactar ms-3" style="z-index: 5;">Contactar</a>
+                </div>
+            </div>
+            </nav>
+
+            <!-- Hero -->
+            <div class="row hero align-items-center">
+              <!-- Coluna da imagem (deve aparecer primeiro em telas pequenas) -->
+              <div class="col-md-12 col-lg-7 col-sm-12 mb-4 order-1 order-lg-2 position-relative text-center" id="imagem-3d">
+                <div class="elipse-fundo">
+                  <img src="img/sobre.svg" alt="3D Logo" class="img-fluid logo-3d mb-5">
+                </div>
+              </div>
+
+              <!-- Coluna do conteúdo (deve aparecer depois em telas pequenas) -->
+              <div class="col-md-12 col-lg-5 col-sm-12 order-2 order-lg-1" id="cont-ms">
+                <h1>Soluções que se<br>Adaptam ao seu Negócio!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Amet sem diam ut pharetra a nunc vitae, Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+
+        </div>
+
+        <!-- Logo Slide -->
+        <div class="logo-slide">
+           
+            <div class="container">
+              <p class="text-center mb-5" >Trusted by top innovative teams</p>
+               
+              <div class="swiper mySwiper">
+              
+                
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide"><img src="img/pagaso.svg" alt="Pagaso"></div>
+                    <div class="swiper-slide"><img src="img/intelize.svg" alt="Intelize"></div>
+                    <div class="swiper-slide"><img src="img/itangola.svg" alt="Itangola"></div>
+                    <div class="swiper-slide"><img src="img/somoney.svg" alt="Somoney"></div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+  </div>
+
+</div>
+
+<section class="sobre-section">
+  <div class="overlay"></div>
+  <div class="br-botton"></div>
+  
+    <div class="container" id="border-1">
+      <div class="row align-items-center">
+        
+        <!-- Texto -->
+        <div class="col-md-12 col-lg-6 col-sm-12" style="z-index: 6;">
+          <a href="#" class="tag-label">Sobre Nós!</a>
+
+          <h1 class="sobre-title">Quem <br>Somos!</h1>
+          <p class="sobre-text">
+            Somos uma empresa focada em <strong>inovação e desenvolvimento tecnológico</strong>, 
+            especializada em criar soluções sob medida para atender às necessidades dos nossos clientes. 
+            Com uma equipe altamente capacitada e um compromisso com a excelência, entregamos soluções que otimizam 
+            processos, aumentam a produtividade e impulsionam o crescimento de negócios de diferentes sectores.
+          </p>
+        </div>
+
+        <!-- Ícone com elipse -->
+        <div class="col-md-12 col-lg-6 col-sm-12 icon-box">
+
+          <!--div class="ellipse-bg">
+            <img src="img/Frame.png" alt="Quem Somos Ícone">
+          </div-->
+
+          <div class="ellipse-wrapper">
+            <div class="ellipse-bg"></div>
+            <img src="img/Frame.png" alt="Imagem Central" class="imagem-central">
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+      },
+      breakpoints: {
+        1280:{slidesPerView: 4},
+        768: { slidesPerView: 3 },
+        576: { slidesPerView: 3 },
+        320: { slidesPerView: 3 }
+      }
+    });
+  </script>
+
+</body>
+</html>

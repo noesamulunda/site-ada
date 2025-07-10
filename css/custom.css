@@ -1,0 +1,609 @@
+body {
+      background: linear-gradient(90deg, #0b0b2a 0%, #171740 100%);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    z-index: 5;
+    box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+.principal{
+
+ width: 100%;
+height: 100%;
+background-image: 
+  url('../img/fundo.png'), /* camada de cima */
+  linear-gradient(
+    rgba(11, 11, 42, 0.7),  /* #0b0b2a com opacidade */
+    rgba(23, 23, 64, 0.7)   /* #171740 com opacidade */
+  ),
+  url('../img/bordas.png'); /* camada de baixo */
+background-size: cover, cover, cover;
+background-position: center, center, center;
+background-repeat: no-repeat, no-repeat, no-repeat;
+position: relative;
+
+
+
+}
+
+.principal::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 68px;
+  width: 1px;
+  height: 100%;
+ background-color: #f0f0f0;
+ opacity: 0.3;
+  z-index: 1;
+}
+
+.principal::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 85px;
+  width: 1px;
+  height: 100%;
+ background-color: #f0f0f0;
+ opacity: 0.3;
+  z-index: 1;
+}
+
+
+    .navbar {
+      background: transparent;
+      padding: 1rem 0;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: white;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      margin-right: 1rem;
+    }
+
+    .nav-link.active {
+      color: #ff2f78;
+    }
+
+    .btn-contactar {
+      border: 1px solid #ff2f78;
+      border-radius: 25px;
+      padding: 6px 20px;
+      color: white;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-contactar:hover {
+      background-color: #ff2f78;
+      color: white;
+    }
+
+    .hero {
+      padding: 100px 0 50px;
+      margin-top: 35px;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      color: #e6dfff;
+    }
+
+    .hero p {
+      color: #bcbcbc;
+      margin-top: 1rem;
+    }
+
+    .logo-slide {
+      background-color: transparent;
+      padding: 40px 0;
+      margin-top: 50px;
+      position: relative;
+      box-sizing: border-box;
+    }
+    .logo-slide::after{
+      content: '';
+      position: absolute;
+      bottom: 172px;
+      background-color: #f0f0f0;
+      opacity: 0.2;
+      width: 100%;
+      height: 1px;
+    }
+ 
+
+    .logo-slide::before{
+      content: '';
+      position: absolute;
+      width: 8px;
+      
+      height: 8px;
+      background-color: #ff2f78;
+      left: 65px;
+      z-index: 999;
+      top: 15px;
+    }
+
+    .swiper-slide img {
+      height: 40px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    
+
+
+.nav-link {
+  color: #bbb;
+  font-weight: normal;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link.active,
+.nav-link.custom-active {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.nav-link.custom-active .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff4081; /* tom rosa */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.elipse-fundo {
+ background: radial-gradient(ellipse at center, rgba(128, 0, 255, 0.6) 0%, rgba(0, 0, 0, 0) 70%);
+filter: blur(40px);
+  width: 165%;
+  height: 80vh;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  /* Remoções explícitas */
+  border: none;
+  box-shadow: none;
+  filter: none;
+  z-index: 2;
+margin-top: 20px;
+
+}
+
+
+.logo-3d {
+  width: 100%;         /* controla o tamanho da imagem */
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .elipse-fundo {
+      background: radial-gradient(ellipse at center, rgba(128, 0, 255, 0.6) 0%, rgba(0, 0, 0, 0) 70%);
+      filter: blur(40px);
+        width: 135%;
+        height: 65vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*transform: translate(-50%, -50%);*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+        /* Remoções explícitas */
+        border: none;
+        box-shadow: none;
+        filter: none;
+        z-index: 2;
+        margin-top: 90px;
+     
+    }
+
+
+  #cont-ms{
+    margin-top: 248px;
+    text-align: center;
+
+  }
+  #cont-ms h1{
+    font-size: 2.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cont-ms p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    margin: auto;
+  }
+
+  .principal{height: 100%; }
+
+
+  .principal::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: 1px;
+  height: 100%;
+ background-color: #f0f0f0;
+ opacity: 0.3;
+  z-index: 1;
+}
+
+.principal::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 1px;
+  height: 100%;
+ background-color: #f0f0f0;
+ opacity: 0.3;
+  z-index: 1;
+}
+
+
+
+
+.logo-slide::after{
+      content: '';
+      position: absolute;
+      bottom: 173px;
+      background-color: #f0f0f0;
+      opacity: 0.3;
+      width: 100%;
+      height: 1px;
+      
+    }
+ 
+
+    .logo-slide::before{
+      content: '';
+      position: absolute;
+      width: 8px;
+      
+      height: 8px;
+      background-color: #ff2f78;
+      left: 10px;
+      z-index: 999;
+      top: 15px;
+    }
+
+    .logo-slide{margin-top: -20px;}
+    .swiper-wrapper{
+      padding-left: 10px;
+      padding-right: 15px !important;
+    }
+
+    .swiper-slide img {
+    max-width: 150px;
+  }
+
+    
+
+  
+}
+
+
+
+
+
+@media screen and (max-width:540px) {
+
+
+  .swiper-wrapper{padding-right: 20px !important;}
+
+  .swiper-slide img {
+    max-width: 100px;
+  }
+
+  .elipse-fundo {width: 185%;}
+
+  #cont-ms{
+    margin-top: 218px;
+    text-align: center;
+
+  }
+
+   .logo-slide::before{left: 5;}
+  
+}
+
+
+/*Sobre*/
+.sobre-section{
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  position: relative;
+  width: 100%;
+  height: 825px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.overlay{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(68.91% 91.44% at 2.89% 2.97%, #8858F9 0%, #01051E 100%);
+  opacity: 0.4; 
+  z-index: 2;
+}
+
+.overlay > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.tag-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 5px 14px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  border: 1px solid #ff007a;
+  color: #ff007a;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  
+}
+
+.tag-label:hover {
+  background-color: #ff007a;
+  color: white;
+}
+
+
+    .sobre-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 800;
+      z-index: 7;
+      color: white;
+     
+      
+    }
+
+    .sobre-title span {
+      color: #bb86fc;
+    }
+
+    .sobre-text {
+      font-size: 1.4rem;
+      color: #ccc;
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+      width: 560px;
+
+      color: #FFF;
+
+      text-align: justify;
+
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 33.6px */
+    }
+
+    .sobre-text strong {
+      color: white;
+    }
+
+    .icon-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+
+
+.ellipse-wrapper {
+  position: relative;
+  width: 520px;
+  height: 520px;
+}
+
+.ellipse-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background: linear-gradient(135deg, rgba(255, 61, 135, 0.6) 0%, rgba(136, 88, 249, 0.8) 100%);
+  filter: blur(60px);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.imagem-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 510px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  filter: drop-shadow(0 0 15px rgba(234, 229, 229, 0.1));
+}
+
+
+
+   .sobre-section::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 68px;
+      width: 1px;
+      height: 100%;
+    background-color: #f0f0f0;
+    opacity: 0.3;
+      z-index: 1;
+    }
+
+    .sobre-section::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 85px;
+      width: 1px;
+      height: 100%;
+    background-color: #f0f0f0;
+    opacity: 0.3;
+      z-index: 1;
+    }
+
+
+    #border-1::before{
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #ff2f78;
+      right: 81px;
+      z-index: 999;
+      top: -4px;
+    }
+
+
+    .br-botton::after{
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #f0f0f0;
+      opacity: 0.3;
+      z-index: 0;
+      
+    }
+
+    @media (max-width: 768px) {
+
+      .sobre-section{
+        padding-top: 70px;
+        text-align: center;
+         height:100%;
+         
+      }
+      .sobre-title {
+        font-size: 2.2rem;
+        text-align: center;
+      }
+
+      .sobre-text {
+        text-align: center;
+      }
+
+      .icon-box {
+        margin-top: 40px;
+      }
+
+
+      .sobre-section::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 12px;
+        width: 1px;
+        height: 100%;
+        background-color: #f0f0f0;
+        opacity: 0.3;
+          z-index: 1;
+      }
+
+    .sobre-section::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: 1px;
+      height: 100%;
+    background-color: #f0f0f0;
+    opacity: 0.3;
+      z-index: 1;
+    }
+
+    #border-1::before{right: 6px; z-index: 2; top: -4px;}
+
+    .overlay{background: #01051E; }
+    .br-botton::after{
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #f0f0f0;
+      opacity: 0.3;
+      z-index: 0;
+      
+    }
+    .tag-label{margin-bottom: 15px;}
+    .sobre-title{font-size: 1.5em;}
+    .sobre-text{text-align: center; width: 100%; font-size: 19px; }
+
+    .ellipse-wrapper {
+      width: 330px;
+      height: 330px;
+
+    }
+    .ellipse-bg {
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(255, 61, 135, 0.8) 0%, rgba(136, 88, 249, 0.7) 100%);
+      
+
+    }
+    .imagem-central {max-width: 300px;}
+    
+
+
+
+
+    }
+
+
+
+
